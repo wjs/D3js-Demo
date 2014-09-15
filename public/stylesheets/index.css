@@ -1,0 +1,116 @@
+* {
+    margin: 0 0;
+    padding: 0 0;
+}
+body {
+    overflow: hidden;
+    background: url(../images/body_bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+#header {
+    height: 0;
+}
+#setting_div {
+    float: left;
+    width: 130px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.6);
+    display: none;
+}
+#setting_div label, #setting_div input  {
+    cursor: pointer;
+    font-size: 14px;
+}
+#setting {
+    margin: 5px 0;
+    float: left;
+    width: 15px;
+    height: 30px;
+    background: url(../images/arrow.png) no-repeat;
+    background-position: top right;
+    cursor: pointer;
+}
+#search {
+    position: relative;
+}
+#search-input {
+    width: 150px;
+    height: 30px;
+    margin: 5px 4px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    border: none;
+    font-size: 120%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+datalist option {
+    height: 40px;
+    font-size: 110%;
+}
+#history {
+    position: relative;
+    width: 40px;
+    margin-top: 15px;
+}
+#history img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 6px;
+    border: 1px solid #ccc;
+}
+#clear_history {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/clear.png) no-repeat;
+    -moz-opacity: 0;
+    opacity: 0;
+}
+#clear_history:hover {
+    -moz-opacity: 1;
+    opacity: 1;
+}
+
+.link { 
+    stroke: #888; 
+    stroke-linejoin: bevel;
+}
+.nodetext {
+    fill: #fff;
+    font: 12px arial;
+    stroke-linejoin: bevel;
+}
+.circle {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#tooltipDiv {
+    position: absolute;
+    display: none;
+    z-index: 10000;
+    border: 2px solid #555;
+    background-color: rgba(255,255,255,0.5);
+    margin: auto;
+    padding: 3px 5px 3px 5px;
+    color: #000;
+    font-size: 12px;
+    font-family: arial;
+    border-radius: 5px;
+    vertical-align: middle;
+    text-align: left;
+    min-width: 50px;
+    overflow: auto;
+}
+#tooltipDiv img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
